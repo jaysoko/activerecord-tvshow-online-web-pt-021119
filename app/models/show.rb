@@ -16,5 +16,15 @@ def self.least_popular_show
   Show.order(rating: :asc).first
 end
 
+def self.ratings_sum
+  Show.sum(:ratings)
+end
+
+def popular_shows
+  
+end
+
+def self.shows_by_alphabetical_order
+end
 
 end
