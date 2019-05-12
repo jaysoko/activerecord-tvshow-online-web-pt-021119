@@ -5,7 +5,7 @@ def self.highest_rating
 end
 
 def self.most_popular_show
-  Show.order(:rating).first
+  Show.order(rating: :desc).first
 end
 
 
