@@ -21,7 +21,7 @@ def self.ratings_sum
 end
 
 def popular_shows
-  
+  Show.where(":ratings > 5")
 end
 
 def self.shows_by_alphabetical_order
