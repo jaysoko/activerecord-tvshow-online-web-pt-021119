@@ -17,7 +17,7 @@ def self.least_popular_show
 end
 
 def self.ratings_sum
-  Show.sum(:ratings)
+  Show.sum(:rating)
 end
 
 def popular_shows
